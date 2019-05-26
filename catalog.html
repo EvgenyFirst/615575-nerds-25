@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»">
         </a>
         <ul class="site-navigation">
           <li>
@@ -54,34 +54,162 @@
       <section class="sites">
 
         <h2 class="visually-hidden">
-          Фильтр товаров
+          Фильтр готовых шаблонов
         </h2>
 
         <section class="sites-form">
-          <!-- Здесь будет форма -->
+          <form class="sites-form-filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="sites-form-filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="adaptive" id="sites-form-filter-adaptive" checked>
+                  <label for="sites-form-filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="sites-form-filter-option">
+                  <input class="visually-hidden filter-input sites-form-filter-input-checkbox" type="radio" name="fixed" id="sites-form-filter-fixed">
+                  <label for="sites-form-filter-fixed">Фиксированная</label>
+                </li>
+                <li class="sites-form-filter-option">
+                  <input class="visually-hidden filter-input sites-form-filter-input-checkbox" type="radio" name="rubber" id="sites-form-filter-rubber">
+                  <label for="sites-form-filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="sites-form-filter-option">
+                  <input class="visually-hidden sites-form-filter-input sites-form-filter-input-radio" type="checkbox" name="product-group" value="slider" id="sites-form-filter-slider" checked>
+                  <label for="sites-form-filter-slider">Слайдер</label>
+                </li>
+                <li class="sites-form-filter-option">
+                  <input class="visually-hidden sites-form-filter-input sites-form-filter-input-radio" type="checkbox" name="product-group" value="advantages" id="sites-form-filter-advantages">
+                  <label for="sites-form-filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="sites-form-filter-option">
+                  <input class="visually-hidden sites-form-filter-input sites-form-filter-input-radio" type="checkbox" name="product-group" value="news" id="sites-form-filter-news" checked>
+                  <label for="sites-form-filter-news">Новости</label>
+                </li>
+                <li class="sites-form-filter-option">
+                  <input class="visually-hidden sites-form-filter-input sites-form-filter-input-radio" type="checkbox" name="product-group" value="gallery" id="sites-form-filter-gallery">
+                  <label for="sites-form-filter-gallery">Галерея</label>
+                </li>
+                <li class="sites-form-filter-option">
+                  <input class="visually-hidden sites-form-filter-input sites-form-filter-input-radio" type="checkbox" name="product-group" value="basket" id="sites-form-filter-basket">
+                  <label for="sites-form-filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="sites-form-filter-button button">Показать</button>
+          </form>
         </section>
 
         <ul class="sites-list">
           <li>
+            <p>
+              <a href="#">
+                <img src="img/browser-not-active.svg" width="360" height="40" alt="Ссылка на сайт «Sedona»">
+              </a>
+            </p>
             <img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт «Sedona»">
+            <div class="catalog-item-price">
+              <p>
+                Sedona
+              </p>
+              <p>
+                Информационный сайт для туристов
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li>
+            <p>
+              <a href="#">
+                <img src="img/browser-not-active.svg" width="360" height="40" alt="Ссылка на сайт «Pink»">
+              </a>
+            </p>
             <img src="img/img-pink.jpg" width="360" height="576" alt="Сайт «Pink»">
+            <div class="catalog-item-price">
+              <p>
+                Pink
+              </p>
+              <p>
+                Продуктовый лендинг приложения для iOS и Android
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li>
+            <p>
+              <a href="#">
+                <img src="img/browser-not-active.svg" width="360" height="40" alt="Ссылка на сайт «Barbershop»">
+              </a>
+            </p>
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт «Barbershop»">
+            <div class="catalog-item-price">
+              <p>
+                Barbershop
+              </p>
+              <p>
+                Сайт салона красоты. Для мужчин, да.
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li>
+            <p>
+              <a href="#">
+                <img src="img/browser-not-active.svg" width="360" height="40" alt="Ссылка на сайт «Mishka»">
+              </a>
+            </p>
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт «Mishka»">
+            <div class="catalog-item-price">
+              <p>
+                Mishka
+              </p>
+              <p>
+                Интернет-магазин вязаных игрушек
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li>
+            <p>
+              <a href="#">
+                <img src="img/browser-not-active.svg" width="360" height="40" alt="Ссылка на сайт «Aplus»">
+              </a>
+            </p>
             <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт «Aplus»">
+            <div class="catalog-item-price">
+              <p>
+                Aplus
+              </p>
+              <p>
+                Лендинг курсов повышения квалификации
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li>
+            <p>
+              <a href="#">
+                <img src="img/browser-not-active.svg" width="360" height="40" alt="Ссылка на сайт «Kvast»">
+              </a>
+            </p>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт «Kvast»">
+            <div class="catalog-item-price">
+              <p>
+                Kvast
+              </p>
+              <p>
+                Промо-сайт производителя крафтового кваса
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
         </ul>
-        
+
         <!-- Пагинатор-->
 
       </section>
@@ -89,6 +217,30 @@
       <!-- NERDS DESIGN STUDIO, карта-->
       
     </main>
+
+    <section class="modal modal-login">
+      <h2>Напишите нам</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-name">Ваше имя:</label>
+          <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-e-mail">Ваш e-mail:</label>
+          <input class="login-icon-e-mail" id="user-e-mail" type="text" name="e-mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-text">Текст письма:</label>
+          <input class="login-icon-text" id="user-text" type="text" name="text" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
+      <button class="modal-close" type="button">
+        x
+      </button>
+    </section>
 
     <footer class="main-footer">
       <div class="footer-social">
