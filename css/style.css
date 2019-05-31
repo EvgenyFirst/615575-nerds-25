@@ -7,6 +7,19 @@ html {
     box-sizing: inherit; 
 }
 
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../fonts/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
 body {
     margin: 0;
     padding: 0;
