@@ -1,0 +1,191 @@
+html {
+    box-sizing: border-box;
+}
+*, 
+*::before, 
+*::after { 
+    box-sizing: inherit; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+ 
+.catalog-item-price,
+.modal {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header,
+.shop-ok {
+    background-color: #eeeeee;
+}
+
+.site-navigation li a,
+.basket-link a {
+    color: black;
+    line-height: 34px;
+    font-size: 16px;
+}
+.site-navigation li a:hover,
+.basket-link a:hover {
+    color: #fb565a;
+}
+.site-navigation li a:focus,
+.basket-link a:focus {
+    color: #a6a6a6;
+}
+.site-navigation li a:active,
+.basket-link a:active,
+.shop-underline {
+    color: black;
+    border-bottom: 2px solid #fb565a;
+    padding-bottom: 13px;
+}
+
+.feature-item h3 {
+    line-height: 28px;
+
+    color: #283136;
+    font-size: 24px;
+}
+.feature-item p {
+    line-height: 11px;
+
+    text-transform: none;
+    color: #283136;
+    font-size: 16px;
+}
+
+/* фильтр на странице каталога */
+
+.sites-form-filter fieldset legend {
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sites-form-filter-option label {
+    text-transform: none;
+    color: #283136;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sites-list li p a img:hover {
+    background-image: url("../img/browser-active.svg");
+}
+
+/* фильтр на странице каталога */
+
+/* "заказать" на главной странице */
+.button-web {
+    background-color: #fb565a;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: lighter;
+}
+.button-web:hover {
+    background-color: #e74246;
+    color: #ffffff;
+}
+.button-web:focus {
+    background-color: #d7373b;
+    color: #e37376;
+}
+
+.button-app {
+    background-color: #00ca74;
+    color: #ffffff;
+    
+    font-size: 16px;
+    font-weight: lighter;
+}
+.button-app:hover {
+    background-color: #00bc6c;
+    color: #ffffff;
+}
+.button-app:focus {
+    background-color: #00aa62;
+    color: #43c08b;
+}
+
+.button-present {
+    background-color: #efc84a;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: lighter;
+}
+.button-present:hover {
+    background-color: #eab534;
+    color: #ffffff;
+}
+.button-present:focus {
+    background-color: #e5a722;
+    color: #edc265;
+}
+/* "заказать" на главной странице */
+
+/* "показать" на странице каталога */
+.sites-form-filter button {
+    background-color: #eeeeee;
+    color: #000000;
+    
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.sites-form-filter button:hover {
+    background-color: #dfdfdf;
+    color: #000000;
+}
+.sites-form-filter button:focus {
+    background-color: #d5d5d5;
+    color: #959595;
+}
+/* "показать" на странице каталога */
+
+.footer-social__friendship {
+    line-height: 13px;
+    color: #000000;
+    text-transform: none;
+    font-size: 36px;
+}
+.footer-social__discount {
+    color: #444444;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* ссылки на соц.сети на страницах каталога и главной */
+.social-button {
+    background-color: #e1e1e1;
+    color: #ffffff;
+}
+.social-button:hover {
+    background-color: #e74246;
+    color: #ffffff;
+}
+.social-button:focus {
+    background-color: #d7373b;
+    color: #e37376;
+}
+/* ссылки на соц.сети на страницах каталога и главной */
