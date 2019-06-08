@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> -->
+    <!--
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»">
         </a>
@@ -68,7 +70,7 @@
           <form class="sites-form-filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Сетка:</legend>
-              <ul>
+              <ul class="list">
                 <li class="sites-form-filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="adaptive" id="sites-form-filter-adaptive" checked>
                   <label for="sites-form-filter-adaptive">Адаптивная</label>
@@ -83,9 +85,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="special">
               <legend>Особенности:</legend>
-              <ul>
+              <ul class="list">
                 <li class="sites-form-filter-option">
                   <input class="visually-hidden sites-form-filter-input sites-form-filter-input-radio" type="checkbox" name="product-group" value="slider" id="sites-form-filter-slider" checked>
                   <label for="sites-form-filter-slider">Слайдер</label>
@@ -114,12 +116,12 @@
 
         <ul class="sites-list">
           <li>
-            <p>
+            <p class="sites-list__Sedona-browser">
               <a href="#">
                 <img src="img/browser-not-active.png" width="360" height="40" alt="Ссылка на сайт «Sedona»">
               </a>
             </p>
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт «Sedona»">
+            <img class="sites-list__Sedona-img" src="img/img-sedona.jpg" width="360" height="576" alt="Сайт «Sedona»">
             <div class="catalog-item-price">
               <p>
                 Sedona
@@ -131,12 +133,12 @@
             </div>
           </li>
           <li>
-            <p>
+            <p class="sites-list__Pink-browser">
               <a href="#">
                 <img src="img/browser-not-active.png" width="360" height="40" alt="Ссылка на сайт «Pink»">
               </a>
             </p>
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Сайт «Pink»">
+            <img class="sites-list__Pink-img" src="img/img-pink.jpg" width="360" height="576" alt="Сайт «Pink»">
             <div class="catalog-item-price">
               <p>
                 Pink
@@ -148,12 +150,12 @@
             </div>
           </li>
           <li>
-            <p>
+            <p class="sites-list__Barbershop-browser">
               <a href="#">
                 <img src="img/browser-not-active.png" width="360" height="40" alt="Ссылка на сайт «Barbershop»">
               </a>
             </p>
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт «Barbershop»">
+            <img class="sites-list__Barbershop-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт «Barbershop»">
             <div class="catalog-item-price">
               <p>
                 Barbershop
@@ -165,12 +167,12 @@
             </div>
           </li>
           <li>
-            <p>
+            <p class="sites-list__Mishka-browser">
               <a href="#">
                 <img src="img/browser-not-active.png" width="360" height="40" alt="Ссылка на сайт «Mishka»">
               </a>
             </p>
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт «Mishka»">
+            <img class="sites-list__Mishka-img" src="img/img-mishka.jpg" width="360" height="576" alt="Сайт «Mishka»">
             <div class="catalog-item-price">
               <p>
                 Mishka
@@ -182,12 +184,12 @@
             </div>
           </li>
           <li>
-            <p>
+            <p class="sites-list__Aplus-browser">
               <a href="#">
                 <img src="img/browser-not-active.png" width="360" height="40" alt="Ссылка на сайт «Aplus»">
               </a>
             </p>
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт «Aplus»">
+            <img class="sites-list__Aplus-img" src="img/img-aplus.jpg" width="360" height="576" alt="Сайт «Aplus»">
             <div class="catalog-item-price">
               <p>
                 Aplus
@@ -199,12 +201,12 @@
             </div>
           </li>
           <li>
-            <p>
+            <p class="sites-list__Kvast-browser">
               <a href="#">
                 <img src="img/browser-not-active.png" width="360" height="40" alt="Ссылка на сайт «Kvast»">
               </a>
             </p>
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт «Kvast»">
+            <img class="sites-list__Kvast-img" src="img/img-kvast.jpg" width="360" height="576" alt="Сайт «Kvast»">
             <div class="catalog-item-price">
               <p>
                 Kvast
@@ -217,11 +219,17 @@
           </li>
         </ul>
 
-        <!-- Пагинатор-->
+        <!--
+          Пагинатор
+        -->
+        <div class="paginator"></div>
 
       </section>
       
-      <!-- NERDS DESIGN STUDIO, карта-->
+      <!--
+        NERDS DESIGN STUDIO, карта
+      -->
+      <section class="map map-catalog"></section>
       
     </main>
 
@@ -249,21 +257,9 @@
       </button>
     </section>
 
-    <footer class="main-footer">
+    <footer class="main-footer container main-footer-catalog">
       <div class="footer-social">
-        <ul>
-            <li>
-              <p class="footer-social__friendship">
-                Давайте дружить, это выгодно!
-              </p> 
-            </li>
-            <li>
-              <p class="footer-social__discount">
-                Скидка 10% для друзей из социальных сетей.
-              </p>
-            </li>
-          </ul>
-        <ul>
+        <ul class="social">
           <li>
             <a class="social-button" href="#">
               Вконтакте
@@ -278,6 +274,18 @@
             <a class="social-button" href="#">
               Инстаграм
             </a>
+          </li>
+        </ul>
+        <ul class="text">
+          <li>
+            <p class="footer-social__friendship">
+              Давайте дружить, это выгодно!
+            </p> 
+          </li>
+          <li>
+            <p class="footer-social__discount">
+              Скидка 10% для друзей из социальных сетей.
+            </p>
           </li>
         </ul>
       </div>

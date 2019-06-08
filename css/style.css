@@ -1,3 +1,4 @@
+/* Settings */
 html {
     box-sizing: border-box;
 }
@@ -33,6 +34,21 @@ body {
     background-color: #ffffff;
     background-position: top center;
     background-repeat: no-repeat;
+
+    /*
+        background-image: url("../img/nerds-index.jpg");
+
+    background-image: url("../img/nerds-catalog.jpg");
+    */
+}
+
+.visually-hidden {
+    text-align: center;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
 }
  
 .catalog-item-price,
@@ -44,11 +60,24 @@ a {
     text-decoration: none;
 }
 
+.site-navigation,
+.basket-link,
+.features-list,
+.footer-social ul,
+.sites-list {
+    list-style: none;
+}
+
 .main-header,
 .shop-ok {
     background-color: #eeeeee;
 }
+/* Settings */
 
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* Шапка на страницах главная и каталог */
 .site-navigation li a,
 .basket-link a {
     color: black;
@@ -58,10 +87,14 @@ a {
 .site-navigation li a:hover,
 .basket-link a:hover {
     color: #fb565a;
+
+    transition: 0.2s;
 }
 .site-navigation li a:focus,
 .basket-link a:focus {
     color: #a6a6a6;
+
+    transition: 0.2s;
 }
 .site-navigation li a:active,
 .basket-link a:active,
@@ -71,19 +104,257 @@ a {
     padding-bottom: 13px;
 }
 
+.main-navigation {
+    display: flex;
+}
+
+.main-header-logo img {
+    margin-top: 49px;
+    margin-right: 200px;
+}
+
+.user-navigation {
+    margin-left: auto;
+}
+
+.site-navigation {
+    display: flex;
+    margin-top: 0;
+    padding-top: 83px;
+    padding-left: 2px;
+}
+
+.basket-link {
+    padding-top: 59px;
+}
+/* Шапка на страницах главная и каталог */
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* Слайдер */
+.slider {
+    width: 1440px;
+    min-height: 414px;
+    background-color: #00bc6c;
+    margin-top: -50px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Слайдер */
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* Преимущества */
+.features {
+    min-height: 507px;
+
+    margin-top: -17px;
+}
+.features-list {
+    display: flex;
+    padding-left: 0;
+
+    margin-top: 35px;
+}
+.feature-item {
+    width: 300px;
+    margin-right: 63px;
+    margin-top: 32px;
+    margin-left: 37px;
+
+    min-height: 347px;
+}
+.feature-item:first-child {
+    margin-left: 0;
+}
+
 .feature-item h3 {
     line-height: 28px;
 
     color: #283136;
     font-size: 24px;
+
+    padding-bottom: 0px;
 }
 .feature-item p {
-    line-height: 11px;
+    line-height: 26px;
 
     text-transform: none;
     color: #283136;
     font-size: 16px;
+
+    margin-top: -7px;
+    margin-bottom: 47px;
 }
+
+.btn-app {
+   margin-left: 40px;
+}
+
+/* "заказать" на главной странице */
+.button-web {
+    background-color: #fb565a;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: lighter;
+}
+.button-web:hover {
+    background-color: #e74246;
+    color: #ffffff;
+
+    transition: 1s;
+}
+.button-web:focus {
+    background-color: #d7373b;
+    color: #e37376;
+}
+
+.button-app {
+    background-color: #00ca74;
+    color: #ffffff;
+    
+    font-size: 16px;
+    font-weight: lighter;
+}
+.button-app:hover {
+    background-color: #00bc6c;
+    color: #ffffff;
+
+    transition: 1s;
+}
+.button-app:focus {
+    background-color: #00aa62;
+    color: #43c08b;
+}
+
+.button-present {
+    background-color: #efc84a;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: lighter;
+}
+.button-present:hover {
+    background-color: #eab534;
+    color: #ffffff;
+
+    transition: 1s;
+}
+.button-present:focus {
+    background-color: #e5a722;
+    color: #edc265;
+}
+/* "заказать" на главной странице */
+/* Преимущества */
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* Линии между секциями */
+.line {
+    color: #eeeeee;
+    height: 2px;
+    margin-top: -15px;
+}
+.line-2 {
+    margin-top: -7px;
+}
+.line-3 {
+    margin-top: 5px;
+}
+
+.about-us {
+    min-height: 525px;
+    background-color:blue;
+    margin-top: -10px;
+}
+/* Линии между секциями */
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* Брэнды */
+.brands {
+    min-height: 182px;
+    background-color:red;
+    margin-top: -8px;
+}
+/* Брэнды */
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* Карта и форма обратной связи */
+.map {
+    width: 1440px;
+    min-height: 505px;
+    background-color:black;
+    margin-top: -16px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Карта и форма обратной связи */
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* Подвал на страницах главня и каталог */
+.footer-social {
+    display: flex;
+    min-height: 217px;
+}
+
+.social {
+    display: flex;
+    padding-top: 87px;
+    padding-left: 26px;
+    padding-right: 110px;
+}
+
+.text {
+    padding-top: 34px;
+    padding-left: 40px;
+}
+.footer-social__discount {
+    margin-top: -10px;
+}
+
+.footer-social__friendship {
+    line-height: 13px;
+    color: #000000;
+    text-transform: none;
+    font-size: 36px;
+}
+.footer-social__discount {
+    color: #444444;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.social-button {
+    background-color: #e1e1e1;
+    color: #ffffff;
+}
+.social-button:hover {
+    background-color: #e74246;
+    color: #ffffff;
+
+    transition: 1s;
+}
+.social-button:focus {
+    background-color: #d7373b;
+    color: #e37376;
+}
+/* Подвал на страницах главня и каталог */
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
 
 /* фильтр на странице каталога */
 
@@ -102,59 +373,14 @@ a {
 
 .sites-list li p a img:hover {
     background-image: url("../img/browser-active.svg");
+
+    transition: 3s;
 }
 
 /* фильтр на странице каталога */
 
-/* "заказать" на главной странице */
-.button-web {
-    background-color: #fb565a;
-    color: #ffffff;
-
-    font-size: 16px;
-    font-weight: lighter;
-}
-.button-web:hover {
-    background-color: #e74246;
-    color: #ffffff;
-}
-.button-web:focus {
-    background-color: #d7373b;
-    color: #e37376;
-}
-
-.button-app {
-    background-color: #00ca74;
-    color: #ffffff;
-    
-    font-size: 16px;
-    font-weight: lighter;
-}
-.button-app:hover {
-    background-color: #00bc6c;
-    color: #ffffff;
-}
-.button-app:focus {
-    background-color: #00aa62;
-    color: #43c08b;
-}
-
-.button-present {
-    background-color: #efc84a;
-    color: #ffffff;
-
-    font-size: 16px;
-    font-weight: lighter;
-}
-.button-present:hover {
-    background-color: #eab534;
-    color: #ffffff;
-}
-.button-present:focus {
-    background-color: #e5a722;
-    color: #edc265;
-}
-/* "заказать" на главной странице */
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
 
 /* "показать" на странице каталога */
 .sites-form-filter button {
@@ -175,30 +401,164 @@ a {
 }
 /* "показать" на странице каталога */
 
-.footer-social__friendship {
-    line-height: 13px;
-    color: #000000;
-    text-transform: none;
-    font-size: 36px;
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* МАГАЗИН ГОТОВЫХ ШАБЛОНОВ */
+.shop-ok {
+    text-align: center;
+    width: 1440px;
+    margin: 0 auto;
+    min-height: 230px;
+
+    margin-top: -70px;
 }
-.footer-social__discount {
-    color: #444444;
+.shop-ok h1 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 55.5px;
+    font-weight: bold;
     text-transform: none;
-    font-size: 16px;
-    font-weight: normal;
+
+    padding-top: 85px;
+}
+/* МАГАЗИН ГОТОВЫХ ШАБЛОНОВ */
+
+/* Фильтр готовых шаблонов */
+.sites {
+    min-height: 2107px;
 }
 
-/* ссылки на соц.сети на страницах каталога и главной */
-.social-button {
-    background-color: #e1e1e1;
-    color: #ffffff;
+.sites-form {
+    display: flex;
+    flex-direction: row;
 }
-.social-button:hover {
-    background-color: #e74246;
-    color: #ffffff;
+
+.sites-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 844px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-left: auto;
+    margin-right: -64px;
+    margin-top: -196px;
 }
-.social-button:focus {
+.sites-list li {
+    margin-top: -9px;  
+}
+.sites-list__Sedona-browser {
+    margin-top: 8px;
+}
+.sites-list__Sedona-img {
+    margin-top: -13px;
+    margin-right: 41px;
+}
+
+.sites-list__Pink-img {
+    margin-top: -13px;
+    margin-left: -1px;
+}
+.sites-list__Pink-browser {
+    margin-top: 9px;
+    margin-left: -1px;
+}
+
+.sites-list__Barbershop-browser {
+    margin-top: 37px;
+    margin-left: -1px;
+}
+.sites-list__Barbershop-img {
+    margin-top: -14px;
+    margin-left: 0px;
+}
+
+.sites-list__Mishka-browser {
+    margin-top: 37px;
+    margin-left: 40px;
+}
+.sites-list__Mishka-img {
+    margin-top: -16px;
+    margin-left: 41px;
+}
+
+.sites-list__Aplus-browser {
+    margin-top: 38px;
+    margin-left: 0px;
+}
+.sites-list__Aplus-img {
+    margin-top: -16px;
+    margin-left: 0;
+}
+
+.sites-list__Kvast-browser {
+    margin-top: 38px;
+    margin-left: 40px;
+}
+.sites-list__Kvast-img {
+    margin-top: -19px;
+    margin-left: 40px;
+}
+/*.sites-list__item {
+    margin-left: 0;
+    margin-top: -211px;
+}*/
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+fieldset {
+    border: none;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+.list {
+    list-style: none;
+}
+.list li label {
+    font-size: 16px;
+    color: #75787b;
+    font-weight: 500;
+}
+
+.sites-form form {
+  position: relative;
+  top: 255px;
+  left: -12px;
+}
+
+.special {
+    position: relative;
+    top: 93px;
+}
+
+.sites-form-filter-button {
+    position: relative;
+    top: 241px;
+    left: 87px;
+}
+
+.paginator {
+    min-height: 110px;
     background-color: #d7373b;
-    color: #e37376;
 }
-/* ссылки на соц.сети на страницах каталога и главной */
+
+.map-catalog {
+    margin-left: -140px;
+}
+
+.main-footer-catalog {
+    margin-top: -25px;
+}
+/* Фильтр готовых шаблонов */
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
