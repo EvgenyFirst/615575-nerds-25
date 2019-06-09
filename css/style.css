@@ -36,9 +36,14 @@ body {
     background-repeat: no-repeat;
 
     /*
-        background-image: url("../img/nerds-index.jpg");
+    background-image: url("../img/nerds-index.jpg");
 
     background-image: url("../img/nerds-catalog.jpg");
+    */
+    /*
+    background-image: url("../img/nerds-index-subs.png");
+
+    background-image: url("../img/nerds-catalog-subs.png");
     */
 }
 
@@ -51,8 +56,7 @@ body {
     margin: 0 auto;
 }
  
-.catalog-item-price,
-.modal {
+.catalog-item-price {
     display: none;
 }
 
@@ -71,6 +75,7 @@ a {
 .main-header,
 .shop-ok {
     background-color: #eeeeee;
+    min-height: 135px;
 }
 /* Settings */
 
@@ -97,36 +102,106 @@ a {
     transition: 0.2s;
 }
 .site-navigation li a:active,
-.basket-link a:active,
+.basket-link:active,
 .shop-underline {
     color: black;
     border-bottom: 2px solid #fb565a;
-    padding-bottom: 13px;
+    padding-bottom: 9px;
+
+    transition: 0.2s;
 }
 
 .main-navigation {
     display: flex;
 }
 
+.main-header-logo {
+    position: absolute;
+    cursor: pointer;
+}
 .main-header-logo img {
     margin-top: 49px;
     margin-right: 200px;
 }
+.main-header-logo:hover {
+    background-image: url("../img/nerds-logo-hover.png");
+    background-repeat: no-repeat;
+    background-position: 0 49px;
+    opacity: .8;
 
-.user-navigation {
-    margin-left: auto;
+}
+.main-header-logo:active {
+    background-image: url("../img/nerds-logo-active.png");
+    background-repeat: no-repeat;
+    background-position: 0 49px;
+    opacity: .5;
 }
 
+.user-navigation {
+    margin-top: 0;
+    margin-left: auto;
+}
+ 
 .site-navigation {
     display: flex;
     margin-top: 0;
-    padding-top: 83px;
-    padding-left: 2px;
+    padding-top: 73px;
+    
+    padding-left: 363px;
 }
 
-.basket-link {
-    padding-top: 59px;
+.site-navigation li {
+    padding-right: 47px;
 }
+.site-navigation li:last-child {
+    padding-right: 0px;
+}
+
+.user-navigation .basket-link {
+    position: relative;
+    margin-left: -39px;
+    height: 110px;
+}
+
+.user-navigation:last-child {
+    width: 115px;
+}
+.basket-link {
+    display: flex;
+    padding-top: 73px;
+    width: 115px;
+}
+.basket-link a {
+    /*padding-left: 25px;*/
+
+    position: absolute;
+    right: 2px;
+    padding-left: 40px;
+}
+.basket-link img {
+    position: relative;
+    border-style: none;
+    top: 7px;
+
+    cursor: pointer;
+}
+
+/*.basket-link a::before {
+    content: "";
+    position: absolute;
+    top: 90px;
+    right: 79px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/cart-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+  }
+  .basket-link a:active::before {
+    border-bottom: 2px solid #fb565a;
+    padding-bottom: 32px;
+  }*/
 /* Шапка на страницах главная и каталог */
 
 /* -------------------------------------------------------------- */
@@ -137,7 +212,7 @@ a {
     width: 1440px;
     min-height: 414px;
     background-color: #00bc6c;
-    margin-top: -50px;
+    margin-top: 2px;
 
     margin-left: auto;
     margin-right: auto;
@@ -157,7 +232,7 @@ a {
     display: flex;
     padding-left: 0;
 
-    margin-top: 35px;
+    margin-top: 60px;
 }
 .feature-item {
     width: 300px;
@@ -190,8 +265,30 @@ a {
     margin-bottom: 47px;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .btn-app {
-   margin-left: 40px;
+   /* margin-left: 40px; */
+   padding-top: 19px;
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-bottom: 19px;
 }
 
 /* "заказать" на главной странице */
@@ -264,7 +361,9 @@ a {
     margin-top: -7px;
 }
 .line-3 {
+    top: -173px;
     margin-top: 5px;
+    position: relative;
 }
 
 .about-us {
@@ -280,7 +379,7 @@ a {
 /* Брэнды */
 .brands {
     min-height: 182px;
-    background-color:red;
+    /*background-color:red;*/
     margin-top: -8px;
 }
 /* Брэнды */
@@ -292,8 +391,8 @@ a {
 .map {
     width: 1440px;
     min-height: 505px;
-    background-color:black;
-    margin-top: -16px;
+   /* background-color:black;*/
+    margin-top: -85px;
 
     margin-left: auto;
     margin-right: auto;
@@ -311,14 +410,15 @@ a {
 
 .social {
     display: flex;
-    padding-top: 87px;
-    padding-left: 26px;
+    margin-top: 0px;
+    padding-top: 40px;
+    padding-left: 2px;
     padding-right: 110px;
 }
 
 .text {
-    padding-top: 34px;
-    padding-left: 40px;
+    padding-top: 7px;
+    padding-left: 20px;
 }
 .footer-social__discount {
     margin-top: -10px;
@@ -338,9 +438,29 @@ a {
 }
 
 .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+  
     background-color: #e1e1e1;
-    color: #ffffff;
+
+    margin-right: 10px;
 }
+
+.social-button:hover path {
+    background-color: #e74246;
+    color: #ffffff;
+
+    transition: 1s;
+}
+.social-button:focus path {
+    background-color: #d7373b;
+    color: #e37376;
+}
+
 .social-button:hover {
     background-color: #e74246;
     color: #ffffff;
@@ -356,25 +476,8 @@ a {
 /* -------------------------------------------------------------- */
 /* -------------------------------------------------------------- */
 
-/* фильтр на странице каталога */
-
-.sites-form-filter fieldset legend {
-    color: #000000;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.sites-form-filter-option label {
-    text-transform: none;
-    color: #283136;
-    font-size: 16px;
-    font-weight: normal;
-}
-
 .sites-list li p a img:hover {
     background-image: url("../img/browser-active.svg");
-
-    transition: 3s;
 }
 
 /* фильтр на странице каталога */
@@ -383,21 +486,32 @@ a {
 /* -------------------------------------------------------------- */
 
 /* "показать" на странице каталога */
-.sites-form-filter button {
-    background-color: #eeeeee;
-    color: #000000;
-    
-    font-size: 16px;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-.sites-form-filter button:hover {
+.sites-form-filter-button:hover {
     background-color: #dfdfdf;
     color: #000000;
 }
-.sites-form-filter button:focus {
+.sites-form-filter-button:focus {
     background-color: #d5d5d5;
     color: #959595;
+}
+
+.sites-form-filter-button {
+    position: relative;
+    top: 36px;
+    left: 1px;
+    background-color: #eeeeee;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 17px;
+    padding-left: 89px;
+    padding-right: 90px;
+    padding-bottom: 17px;
+    border: none;
+    border-radius: 5%;
+
+    cursor: pointer;
 }
 /* "показать" на странице каталога */
 
@@ -407,11 +521,10 @@ a {
 /* МАГАЗИН ГОТОВЫХ ШАБЛОНОВ */
 .shop-ok {
     text-align: center;
-    width: 1440px;
     margin: 0 auto;
     min-height: 230px;
 
-    margin-top: -70px;
+    margin-top: -37px;
 }
 .shop-ok h1 {
     font-family: "Roboto", Arial, sans-serif;
@@ -419,18 +532,20 @@ a {
     font-weight: bold;
     text-transform: none;
 
-    padding-top: 85px;
+    padding-top: 76px;
 }
 /* МАГАЗИН ГОТОВЫХ ШАБЛОНОВ */
 
 /* Фильтр готовых шаблонов */
 .sites {
     min-height: 2107px;
+    margin-top: 447px;
 }
 
 .sites-form {
     display: flex;
     flex-direction: row;
+    position: absolute;
 }
 
 .sites-list {
@@ -439,10 +554,9 @@ a {
     width: 844px;
     padding-left: 20px;
     padding-right: 20px;
-
     margin-left: auto;
     margin-right: -64px;
-    margin-top: -196px;
+    margin-top: -322px;
 }
 .sites-list li {
     margin-top: -9px;  
@@ -456,7 +570,7 @@ a {
 }
 
 .sites-list__Pink-img {
-    margin-top: -13px;
+    margin-top: -16px;
     margin-left: -1px;
 }
 .sites-list__Pink-browser {
@@ -469,7 +583,7 @@ a {
     margin-left: -1px;
 }
 .sites-list__Barbershop-img {
-    margin-top: -14px;
+    margin-top: -16px;
     margin-left: 0px;
 }
 
@@ -478,7 +592,7 @@ a {
     margin-left: 40px;
 }
 .sites-list__Mishka-img {
-    margin-top: -16px;
+    margin-top: -15px;
     margin-left: 41px;
 }
 
@@ -496,54 +610,174 @@ a {
     margin-left: 40px;
 }
 .sites-list__Kvast-img {
-    margin-top: -19px;
+    margin-top: -16px;
     margin-left: 40px;
 }
-/*.sites-list__item {
-    margin-left: 0;
-    margin-top: -211px;
-}*/
 
 /* -------------------------------------------------------------- */
 /* -------------------------------------------------------------- */
 
-fieldset {
+.sites-form form {
+    position: relative;
+    top: 193px;
+    left: 0px;
+}
+
+.filters {
+    width: 180px;
+}
+
+.filter fieldset {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
     border: none;
 }
 
-legend {
-    box-sizing: border-box;
-    color: inherit;
-    display: table;
-    max-width: 100%;
-    padding: 0;
-    white-space: normal;
+.filter fieldset:first-child {
+    margin-bottom: 68px;
 }
 
-.list {
-    list-style: none;
+.filter legend {
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
 }
-.list li label {
+.filter ul {
+    text-transform: none;
+    color: #283136;
     font-size: 16px;
-    color: #75787b;
-    font-weight: 500;
+    font-weight: normal;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    line-height: 18px;
 }
 
-.sites-form form {
-  position: relative;
-  top: 255px;
-  left: -12px;
-}
-
-.special {
+.filter-table,
+.filter-special {
     position: relative;
-    top: 93px;
+    top: 26px;
+    left: -9px;
 }
 
-.sites-form-filter-button {
+
+.filter-option label,
+.filter-option label:hover {
+    color: #283136;
+}
+.filter-option label:active {
+    color: #bec1c2;
+}
+  
+.filter-option {
+    margin-bottom: 19px;
+    padding-left: 45px;
+}
+
+.filter-option label {
     position: relative;
-    top: 241px;
-    left: 87px;
+
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+  
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 0;
+    width: 23px;
+    height: 19px;
+    border: 2px solid #b8b8b8;
+}
+
+.filter-input-checkbox:checked + label:hover::after {
+    background-image: url(../img/checkbox-on-hoever.png);
+}
+.filter-input-checkbox:checked + label:active::after {
+    background-image: url(../img/checkbox-on-ok.png);
+    border-color: #e5e5e5;
+}
+
+.filter-input-checkbox + label:hover::before {
+    border-color: #4d4d4d;
+}
+.filter-input-checkbox + label:active::before {
+    border-color: #e5e5e5;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -36px;
+    width: 23px;
+    height: 19px;
+    background-image: url(../img/checkbox-on.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: -3px;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #b8b8b8;
+    border-radius: 50%;
+}
+.filter-input-radio + label:hover::before {
+    border-color: #4d4d4d;
+}
+.filter-input-radio + label:active::before {
+    border-color: #ededed;
+}
+
+.filter-input:disabled + label {
+    color: #000000;
+
+    opacity: 0.5;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -27px;
+    width: 8px;
+    height: 8px;
+    background-color: #b8b8b8;
+    border-radius: 50%;
+}
+.filter-input-radio:checked + label:hover::after {
+     background-color: #4d4d4d;
+}
+.filter-input-radio:checked + label:active::after {
+    background-color: #ededed;
+}
+
+.catalog {
+    width: 700px;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+
+    list-style: none;
 }
 
 .paginator {
@@ -559,6 +793,148 @@ legend {
     margin-top: -25px;
 }
 /* Фильтр готовых шаблонов */
+.main-footer-index {
+    margin-top: 50px;
+}
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
 
+/* Модальное окно */
+
+.login-form-write-to-us {
+    font-size: 45px;
+    font-weight: medium;
+    text-transform: none;
+    margin-top: 8px;
+}
+.login-form-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1000px;
+    padding-top: -2px;
+    margin-left: -3px;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: medium;
+}
+.login-form-flex p {
+    display: flex;
+    flex-direction: column;
+}
+.login-form-user,
+.login-form-e-mail {
+    position: relative;
+    top: 11px;
+    padding-top: 16px;
+    padding-left: 14px;
+    padding-right: 229px;
+    padding-bottom: 17px;
+    margin-right: 46px;
+    height: 46px;
+    width: 356px;
+    border: 2px solid #d7dcde;
+}
+
+.user-text {
+    top: 19px;
+    position: relative;
+    
+    padding-bottom: 20px;
+}
+.login-form-text {
+    position: relative;
+    top: 11px;
+    padding-top: 13px;
+    padding-left: 13px;
+    padding-right: 586px;
+    padding-bottom: 86px;
+    margin-right: 46px;
+    height: 114px;
+    width: 756px;
+    border: 2px solid #d7dcde;
+}
+
+.modal {
+    bottom: -762px;
+    right: 50%;
+    left: 50%;
+    z-index: 10000;
+    margin: 0 auto;
+    width: 955px;
+    min-width: 590px;
+    min-height: 583px;
+    /* max-width: 891px; */
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 15px 20px rgba(0,0,0,.22), 0 19px 60px rgba(0,0,0,.3);
+    transform: translate(-50%, -150%);
+    padding-top: 70px;
+    padding-left: 101px;
+    padding-right: 88px;
+    padding-bottom: 83px;
+}
+
+.modal-close {
+    position: relative;
+    top: -388px;
+    right: -748px;
+
+    width: 21px;
+    height: 21px;
+
+    background-image: url(../img/close-cross.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+.modal-close:hover {
+    background-image: url(../img/close-cross.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background-color: transparent;
+}
+.modal-close:active {
+    background-image: url(../img/close-cross.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background-color: transparent;
+
+    opacity: .7;
+}
+
+.login-form-button {
+    background-color: #fb565a;
+    padding-top: 19px;
+    padding-left: 82px;
+    padding-right: 84px;
+    padding-bottom: 19px;
+    border-radius: 5%;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: medium;
+    cursor: pointer;
+    position: relative;
+    top: 41px;
+    left: -4px;
+    border: none;
+}
+.login-form-button:hover {
+    background-color: #e74246;
+}
+.login-form-button:active {
+    background-color: #d7373b;
+}
+/* Модальное окно */
 /* -------------------------------------------------------------- */
 /* -------------------------------------------------------------- */
