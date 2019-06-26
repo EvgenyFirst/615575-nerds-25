@@ -10,16 +10,43 @@ html {
 
 @font-face {
     font-family: Roboto; /* Имя шрифта */
-    src: url(../fonts/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
-   }
-@font-face {
-    font-family: Roboto; /* Имя шрифта */
-    src: url(../fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/robotobold.woff); /* Путь к файлу со шрифтом */
 }
 @font-face {
     font-family: Roboto; /* Имя шрифта */
-    src: url(../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/robotobold.woff2); /* Путь к файлу со шрифтом */
 }
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../fonts/robotomedium.woff); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../fonts/robotomedium.woff2); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../fonts/roboto.woff); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../fonts/roboto.woff2); /* Путь к файлу со шрифтом */
+}
+
+/*
+    @font-face {
+        font-family: Roboto; Имя шрифта
+        src: url(../fonts/Roboto-Bold.ttf); Путь к файлу со шрифтом
+    }
+    @font-face {
+        font-family: Roboto; Имя шрифта
+        src: url(../fonts/Roboto-Medium.ttf);  Путь к файлу со шрифтом
+    }
+    @font-face {
+        font-family: Roboto; Имя шрифта
+        src: url(../fonts/Roboto-Regular.ttf); Путь к файлу со шрифтом
+    }
+*/
 
 body {
     margin: 0;
@@ -45,6 +72,11 @@ body {
 
     background-image: url("../img/nerds-catalog-subs.png");
     */
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
 }
 
 .visually-hidden {
@@ -207,17 +239,25 @@ a {
 /* -------------------------------------------------------------- */
 /* -------------------------------------------------------------- */
 
-/* Слайдер */
+/* Слайдер 
 .slider {
-    width: 1440px;
+    max-width: 1440px;
     min-height: 414px;
     background-color: #00bc6c;
-    margin-top: 2px;
 
+    margin-top: 2px;
     margin-left: auto;
     margin-right: auto;
+
+    padding-top: 0px;
 }
-/* Слайдер */
+
+.slider-slides {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+ Слайдер */
 
 /* -------------------------------------------------------------- */
 /* -------------------------------------------------------------- */
@@ -486,6 +526,10 @@ input[type="radio"].visually-hidden {
 /* -------------------------------------------------------------- */
 
 /* "показать" на странице каталога */
+.filter-strong {
+    margin-top: -200px;
+}
+
 .sites-form-filter-button:hover {
     background-color: #dfdfdf;
     color: #000000;
@@ -874,6 +918,8 @@ input[type="radio"].visually-hidden {
     padding-left: 101px;
     padding-right: 88px;
     padding-bottom: 83px;
+
+    display: none; /* temp */
 }
 
 .modal-close {

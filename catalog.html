@@ -68,7 +68,24 @@
         </h2>
 
         <section class="sites-form">
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="filter-item">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>
+              </fieldset>
+
               <fieldset>
                 <legend>Сетка:</legend>
                 <ul class="filter-table">
@@ -115,6 +132,18 @@
             </form>
         </section>
 
+        <div>
+            <div>
+              <p>Сортировать:</p>
+            </div>
+            <div>
+              <p>По цене</p>
+              <p>По типу</p>
+              <p>По названию</p>
+              <span>Стрелка вниз</span>
+              <span>Стрелка вверх</span>
+            </div>
+        </div>
         <ul class="sites-list">
           <li>
             <p class="sites-list__Sedona-browser">
@@ -223,14 +252,23 @@
         <!--
           Пагинатор
         -->
-        <div class="paginator"></div>
+        <div class="paginator">
+          <ul class="pagination-list">
+              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+              <li class="pagination-item"><a>2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item"><a href="#">4</a></li>
+          </ul>
+        </div>
 
       </section>
       
-      <!--
-        NERDS DESIGN STUDIO, карта
-      -->
-      <section class="map map-catalog"></section>
+    <!--
+      NERDS DESIGN STUDIO, карта
+    -->
+    <section class="map  map-catalog">
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+    </section>
       
     </main>
 
