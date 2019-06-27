@@ -258,7 +258,24 @@ a {
     align-items: flex-end;
 }
  Слайдер */
-
+ .slider-slides-1 {
+    background-color: #eeeeee;
+    background-image: url("../img/nerds-index-slide1.png");
+    width: 760px;
+    height: 431px;
+ }
+ .slider-slides-2 {
+    background-color: #eeeeee;
+    background-image: url("../img/nerds-index-slide2.png");
+    width: 760px;
+    height: 431px;
+ }
+ .slider-slides-3 {
+    background-color: #eeeeee;
+    background-image: url("../img/nerds-index-slide3.png");
+    width: 760px;
+    height: 431px;
+}
 /* -------------------------------------------------------------- */
 /* -------------------------------------------------------------- */
 
@@ -408,7 +425,9 @@ input[type="radio"].visually-hidden {
 
 .about-us {
     min-height: 525px;
-    background-color:blue;
+    /* 
+        background-color:blue;
+    */
     margin-top: -10px;
 }
 /* Линии между секциями */
