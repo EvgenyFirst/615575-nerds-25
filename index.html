@@ -60,15 +60,18 @@
     <h1 class="visually-hidden">
       Слайдер с описанием Дизайн-студии «Nerds»
     </h1>
-    <section class="slider">
+    <section class="container slider">
       <div class="slider-inner">
         <div class="slider-slides">
           <div class="slider-slides-set slider-slides-1">
-            <h3>Долго, дорого,<br> скрупулезно.</h3>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="btn-app button-web" href="#">
-              Узнать больше
-            </a>
+            <div class="slider-slides-set__spec slider-slides-1__info">
+                <h3>Долго, дорого,<br> скрупулезно.</h3>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="button-web btn-slide" href="#">
+                  Узнать больше
+                </a>
+            </div>
+            <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
           </div>
           <div class="slider-slides-set slider-slides-2">
             <h3>Любим математику<br> как никто другой</h3>
@@ -86,9 +89,11 @@
           </div>
         </div>
       </div>
-      <input type="radio" id="btn-1" name="btn" checked>
-      <input type="radio" id="btn-2" name="btn">
-      <input type="radio" id="btn-3" name="btn">
+      <div class="slider-controls">
+        <input type="radio" id="btn-1" name="btn" checked>
+        <input type="radio" id="btn-2" name="btn">
+        <input type="radio" id="btn-3" name="btn">
+      </div>
       <div class="slider-controls">
         <label for="btn-1"></label>
         <label for="btn-2"></label>
@@ -147,10 +152,10 @@
         </ul> 
       </section>
 
-      <hr class="line">
+      <hr class="line line-1">
 
       <!--
-        Мы - маленькая, но гордая дизайн-студия из Краснодара
+        Мы — маленькая, но гордая дизайн-студия из Краснодара
       -->
       <h2 class="visually-hidden">
         Возможности
@@ -162,7 +167,7 @@
           </h2>
           <p>
             Исповедуем принципы минимализма и чистоты. Ставим математический 
-            расчет превыше креатива. Работаем не покладая рук, как роботы.
+            расчет<br> превыше креатива. Работаем не покладая рук, как роботы.
           </p>
           <ul class="services-flex">
             <li>
@@ -183,7 +188,7 @@
           </ul>
         </div>
         <div class="about-us__info">
-            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип дизайн-студии «Nerds»">
+            <img src="img/nerds-illustration.jpg" width="460" height="208" alt="Логотип дизайн-студии «Nerds»">
             <p>с 2004 года Любим точность во всем:</p>
             <div class="info-statistics">
               <div class="info-statistics__flex info-statistics__flex--column-1">
@@ -201,6 +206,7 @@
       </section>
 
       <hr class="line line-2">
+
       <h2 class="visually-hidden">
         Партнеры
       </h2>
@@ -222,7 +228,9 @@
           </a>
       </section>
       
+      <hr class="line line-3">
     </main>
+
           
     <!--
       NERDS DESIGN STUDIO, карта
@@ -230,18 +238,20 @@
     <h2 class="visually-hidden">
       Местоположение
     </h2>
+
     <section class="map">
+      <div class="container">
         <div class="map__contacts-subs">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
-
+    
           <p>тел. <a href="tel: +7 (812) 275-75-75">+7 (812) 275-75-75</a></p>
           <button class="login-form-button" type="submit">
-              Напишите нам
-            </button>
+            Напишите нам
+          </button>
         </div>
-        <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+      </div>
     </section>
 
     <section class="container-modal modal modal-login">
