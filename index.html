@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -60,46 +60,39 @@
     <h1 class="visually-hidden">
       Слайдер с описанием Дизайн-студии «Nerds»
     </h1>
-    <section class="container slider">
-      <div class="slider-inner">
-        <div class="slider-slides">
-          <div class="slider-slides-set slider-slides-1">
-            <div class="slider-slides-set__spec slider-slides-1__info">
-                <h3>Долго, дорого,<br> скрупулезно.</h3>
-                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-                <a class="button-web btn-slide" href="#">
-                  Узнать больше
-                </a>
-            </div>
-            <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
+    <section class="slider">
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
           </div>
-          <div class="slider-slides-set slider-slides-2">
-            <h3>Любим математику<br> как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="btn-app button-web" href="#">
-              Узнать больше
-            </a>
-          </div>
-          <div class="slider-slides-set slider-slides-3">
-            <h3>Только ночь,<br> только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="btn-app button-web" href="#">
-              Узнать больше
-            </a>
-          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Долго, дорого,<br> скрупулезно.</h3>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
+            </li>
+            <li class="slider-item">
+              <h3>Любим математику как никто другой</h3>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
+            </li>
+            <li class="slider-item">
+              <h3>Только ночь,<br> только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
+            </li>
+          </ul>  
         </div>
-      </div>
-      <div class="slider-controls">
-        <input type="radio" id="btn-1" name="btn" checked>
-        <input type="radio" id="btn-2" name="btn">
-        <input type="radio" id="btn-3" name="btn">
-      </div>
-      <div class="slider-controls">
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
-      </div>
-    </section> 
+      </section>
 
     <main class="container">
 
@@ -207,25 +200,25 @@
 
       <hr class="line line-2">
 
-      <h2 class="visually-hidden">
-        Партнеры
-      </h2>
       <section class="brands">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/html-academy.png" width="280" height="180" alt="Html Academy">
-          </a>
-          <hr class="line line-brands">
-          <a href="#">
-            <img src="img/barbershop-borodinski.png" width="280" height="180" alt="Barbershop Borodinski">
-          </a>
-          <hr class="line line-brands">
-          <a href="#">
-            <img src="img/pink.png" width="280" height="180" alt="Pink">
-          </a>
-          <hr class="line line-brands">
-          <a href="#">
-            <img src="img/mishka.png" width="280" height="180" alt="Mishka">
-          </a>
+        <h2 class="visually-hidden">
+          Партнеры
+        </h2>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/html-academy.png" width="280" height="180" alt="Html Academy">
+        </a>
+        <hr class="line line-brands">
+        <a href="#">
+          <img src="img/barbershop-borodinski.png" width="280" height="180" alt="Barbershop Borodinski">
+        </a>
+        <hr class="line line-brands">
+        <a href="#">
+          <img src="img/pink.png" width="280" height="180" alt="Pink">
+        </a>
+        <hr class="line line-brands">
+        <a href="#">
+          <img src="img/mishka.png" width="280" height="180" alt="Mishka">
+        </a>
       </section>
       
       <hr class="line line-3">
@@ -238,15 +231,14 @@
     <h2 class="visually-hidden">
       Местоположение
     </h2>
-
     <section class="map">
       <div class="container">
-        <div class="map__contacts-subs">
+        <div class="map__contacts-subs-index map__contacts-subs">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
     
-          <p>тел. <a href="tel: +7 (812) 275-75-75">+7 (812) 275-75-75</a></p>
+          <p>тел. <a href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></p>
           <button class="login-form-button" type="submit">
             Напишите нам
           </button>
@@ -255,6 +247,9 @@
     </section>
 
     <section class="container-modal modal modal-login">
+      <h2 class="visually-hidden">
+        Форма обратной связи
+      </h2>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="login-form-write-to-us">Напишите нам</p>
         <div class="login-form-flex">
@@ -275,9 +270,6 @@
           Отправить
         </button>
       </form>
-      <button class="modal-close" type="button">
-        
-      </button>
     </section>
 
     <footer class="main-footer-index main-footer container">
