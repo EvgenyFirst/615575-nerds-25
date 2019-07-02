@@ -235,49 +235,44 @@
       <h2 class="visually-hidden">
         Местоположение
       </h2>
-      <section class="map map-catalog map-container map-width">
-          <div class="container">
-            <div class="map__contacts-subs">
-              <h3>NЁRDS DESIGN STUDIO</h3>
-              <p>191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8</p>
-        
-              <p>тел. <a href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></p>
-              <button class="login-form-button" type="submit">
-                Напишите нам
-              </button>
-            </div>
+      <section class="map map-catalog">
+        <div class="container">
+          <div class="map__contacts-subs-index map__contacts-subs map__contacts-subs-catalog ">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8</p>
+      
+            <p>тел. <a href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></p>
+            <button class="btn-app button-web write-form-button btn-pointer" type="submit">
+              Напишите нам
+            </button>
           </div>
-        </section>
-      </main>
-
-      <section class="container-modal modal modal-login">
+        </div>
+      </section>
+  
+      <section class="container-modal modal modal-write">
         <h2 class="visually-hidden">
           Форма обратной связи
         </h2>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="login-form-write-to-us">Напишите нам</p>
-          <div class="login-form-flex">
+        <h2>Напишите нам</h2>
+        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="write-form-flex">
             <p>
-              <label for="user-name">Ваше имя:</label>
-              <input class="login-form-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+              <label class="header-label" for="user-name">Ваше имя:</label>
+              <input class="placeholder-txt write-user your-name" id="user-name" type="text" name="writeusr" required placeholder="Имя Фамилия">
             </p>
             <p>
-              <label for="user-e-mail">Ваш e-mail:</label>
-              <input class="login-form-e-mail" id="user-e-mail" type="text" name="e-mail" placeholder="email@example.com">
-            </p>
-            <p>
-              <label class="user-text" for="user-text">Текст письма:</label>
-              <input class="login-form-text" id="user-text" type="text" name="text" placeholder="В свободной форме">
+              <label class="header-label" for="user-e-mail">Ваш e-mail:</label>
+              <input class="placeholder-txt write-user your-e-mail errrfield" id="user-e-mail" type="email" name="usremail" required placeholder="email@example.com">
             </p>
           </div>
-          <button class="login-form-button" type="submit">
-            Отправить
-          </button>
+          <p class="text-flex">
+            <label class="header-label" for="user-text">Текст письма:</label>
+            <input class="placeholder-txt write-text errrfield" id="user-text" type="text" name="usrtext" placeholder="В свободной форме">
+          </p>
+          <button id="button" class="btn-modal button btn-pointer" type="submit">Отправить</button>
         </form>
-        <button class="modal-close" type="button">
-          
-        </button>
+        <button class="modal-close btn-pointer errrfield" type="button">Закрыть</button>
       </section>
 
       <footer class="main-footer container catalog-footer">
@@ -350,6 +345,8 @@
           </ul>
         </div>
       </footer>   
+
+      <script type="text/javascript" src="js/modal.js"></script>
     
   </body>
 </html>
