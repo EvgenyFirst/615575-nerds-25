@@ -746,7 +746,7 @@ input[type="radio"].visually-hidden {
 /* Пагинатор */
 
 .paginator {
-    margin-top: -970px;
+    margin-top: -982px;
     margin-left: 400px;
 }
 
@@ -835,6 +835,7 @@ input[type="radio"].visually-hidden {
 
 /* Карта и форма обратной связи */
 .map {
+ 
     height: 414px;
     max-width: 1440px;
     max-height: 416px;
@@ -844,9 +845,9 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0px;
     margin-left: auto;
 
-    background-image: url("../img/map.jpg");
+  /*  background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 .map-container {
     margin: 0 auto;
@@ -866,6 +867,8 @@ input[type="radio"].visually-hidden {
     align-items: center;
 }
 .map__contacts-subs {
+    position: absolute;
+    top: 1848px;
     display: flex;
     flex-direction: column;
     width: 319px;
@@ -896,10 +899,10 @@ input[type="radio"].visually-hidden {
 }
 .map__contacts-subs-index {
     margin-top: 53px;
-    margin-left: 100px;
+    margin-left: 140px;
 }
 .map__contacts-subs-catalog {
-    margin-top: 198px;
+    margin-top: -1796px;
 }
 /* Карта и форма обратной связи */
 
@@ -1535,15 +1538,15 @@ input[type="radio"].visually-hidden {
 }
 
 .map-catalog {
-    position: absolute;
-    width: 109.99%;
-    margin-top: 0;
-    margin-left: -142px;
-    top: 2572px;
+    position: relative;
+    top: -423px;
+    width: 100%;
+    margin-bottom: -82px;
+
 }
 
 .catalog-footer {
-    margin-top: 100px;
+    margin-top: -394px;
 }
 
 .main-footer-catalog {
@@ -1603,7 +1606,7 @@ input[type="radio"].visually-hidden {
     right: 87px;
     width: 21px;
     height: 22px;
-    
+
     font-size: 0;
     background-color: transparent;
     border: 0;
@@ -1670,11 +1673,6 @@ input[type="radio"].visually-hidden {
 
   .write-form-flex {
       display: flex;
-  }
-
-  .write-form-flex p,
-  .text-flex {
-      border-color: 2px solid #d7dcde;
   }
   
   .write-form input:focus {
