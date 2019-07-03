@@ -34,18 +34,18 @@ html {
 }
 
 /*
-@font-face {
-    font-family: Roboto; Имя шрифта
-    src: url(../fonts/Roboto-Bold.ttf); Путь к файлу со шрифтом
-}
-@font-face {
-    font-family: Roboto; Имя шрифта
-    src: url(../fonts/Roboto-Medium.ttf);  Путь к файлу со шрифтом
-}
-@font-face {
-    font-family: Roboto; Имя шрифта
-    src: url(../fonts/Roboto-Regular.ttf); Путь к файлу со шрифтом
-}
+    @font-face {
+        font-family: Roboto; Имя шрифта
+        src: url(../fonts/Roboto-Bold.ttf); Путь к файлу со шрифтом
+    }
+    @font-face {
+        font-family: Roboto; Имя шрифта
+        src: url(../fonts/Roboto-Medium.ttf);  Путь к файлу со шрифтом
+    }
+    @font-face {
+        font-family: Roboto; Имя шрифта
+        src: url(../fonts/Roboto-Regular.ttf); Путь к файлу со шрифтом
+    }
 */
 
 body {
@@ -300,6 +300,8 @@ a {
 
     border-radius: 50%;
     cursor: pointer;
+
+    vertical-align: top;
 }
 
 .slider-controls label::after {
@@ -828,7 +830,6 @@ input[type="radio"].visually-hidden {
     height: 0;
     background-color: white;
 }
-
 /* Пагинатор */
 /* -------------------------------------------------------------- */
 /* -------------------------------------------------------------- */
@@ -845,9 +846,11 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0px;
     margin-left: auto;
 
-  /*  background-image: url("../img/map.jpg");
+/*  
+    background-image: #b5b5b5 url("../img/map.jpg");
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
+*/
 }
 .map-container {
     margin: 0 auto;
@@ -1132,6 +1135,8 @@ input[type="radio"].visually-hidden {
     width: 50%;
     font-size: 16px;
     text-transform: uppercase;
+
+    vertical-align: top;
 }
 
 .price-controls input {
@@ -1348,6 +1353,8 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
     border-radius: 3px;
     background-color: #fb565a;
+
+    vertical-align: top;
 }
 
 .item-price:hover {
@@ -1423,7 +1430,6 @@ input[type="radio"].visually-hidden {
 
     text-transform: none;
     list-style: none;
-
 }
 
 .filter-table,
@@ -1465,10 +1471,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-checkbox:checked + label:hover::after {
-    background-image: url(../img/checkbox-on-hoever.png);
+    background-image: #b5b5b5 url(../img/checkbox-on-hoever.png);
 }
 .filter-input-checkbox:checked + label:active::after {
-    background-image: url(../img/checkbox-on-ok.png);
+    background-image: #b5b5b5 url(../img/checkbox-on-ok.png);
     border-color: #e5e5e5;
 }
 
@@ -1542,7 +1548,6 @@ input[type="radio"].visually-hidden {
     top: -423px;
     width: 100%;
     margin-bottom: -82px;
-
 }
 
 .catalog-footer {
@@ -1561,7 +1566,6 @@ input[type="radio"].visually-hidden {
 /* -------------------------------------------------------------- */
 
 /* Модальное окно */
-
 
 .modal {
     position: fixed;

@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    
     <!--
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
     -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -101,7 +105,6 @@
           Преимущества
         </h2>
         <ul class="features-list">
-
           <li class="feature-item">
             <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
             <h3>
@@ -127,7 +130,6 @@
               Заказать
             </a>
           </li>
-
           <li class="feature-item">
           <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
           <h3>
@@ -141,7 +143,6 @@
               Заказать
             </a>
           </li>
-
         </ul> 
       </section>
 
@@ -222,9 +223,9 @@
       </section>
       
       <hr class="line line-3">
-    </main>
 
-          
+    </main>
+     
     <!--
       NERDS DESIGN STUDIO, карта
     -->
@@ -236,9 +237,10 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562096839720!5m2!1sru!2sru" width="1440" height="414" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="map__contacts-subs-index map__contacts-subs">
           <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8</p>
-    
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
           <p>тел. <a href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></p>
           <button class="btn-app button-web write-form-button btn-pointer" type="submit">
             Напишите нам
@@ -260,16 +262,16 @@
           </p>
           <p>
             <label class="header-label" for="user-e-mail">Ваш e-mail:</label>
-            <input class="placeholder-txt write-user your-e-mail errrfield" id="user-e-mail" type="email" name="usremail" required placeholder="email@example.com">
+            <input class="placeholder-txt write-user your-e-mail" id="user-e-mail" type="email" name="usremail" required placeholder="email@example.com">
           </p>
         </div>
         <p class="text-flex">
           <label class="header-label" for="user-text">Текст письма:</label>
-          <input class="placeholder-txt write-text errrfield" id="user-text" type="text" name="usrtext" placeholder="В свободной форме">
+          <input class="placeholder-txt write-text" id="user-text" type="text" name="usrtext" placeholder="В свободной форме">
         </p>
         <button id="button" class="btn-modal button btn-pointer" type="submit">Отправить</button>
       </form>
-      <button class="modal-close btn-pointer errrfield" type="button">Закрыть</button>
+      <button class="modal-close btn-pointer" type="button">Закрыть</button>
     </section>
 
     <footer class="main-footer-index main-footer container">
@@ -343,7 +345,11 @@
       </div>
     </footer>  
     
-    <script type="text/javascript" src="js/modal.js"></script>
+    <!--
+      <script type="text/javascript" src="js/modal.js"></script>
+    --->
+
+    <script type="text/javascript" src="js/modal.min.js"></script>
 
   </body>
 </html>
