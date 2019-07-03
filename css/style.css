@@ -907,6 +907,12 @@ input[type="radio"].visually-hidden {
 .map__contacts-subs-catalog {
     margin-top: -1796px;
 }
+
+iframe {
+    border: none;
+    height: 414px;
+    width: 1440px;
+}
 /* Карта и форма обратной связи */
 
 /* -------------------------------------------------------------- */
