@@ -11,20 +11,13 @@ var link = document.querySelector(".write-form-button");
   var isStorageSupport = true;
   var storage = "";
 
-  try {
-    storage = localStorage.getItem("writeusr");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-  
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
     
     if (storage) {
       writeusr.value = storage;
-      usremail.focus();
-      usrtext.focus();
+      writeusr.focus();
     } else {
       writeusr.focus();
     }
@@ -33,10 +26,9 @@ var link = document.querySelector(".write-form-button");
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
   });
-  
-  form.addEventListener("submit", function (evt) {
+
+    form.addEventListener("submit", function (evt) {
     if (!writeusr.value || !usremail.value || !usrtext.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
@@ -54,7 +46,6 @@ var link = document.querySelector(".write-form-button");
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
       }
     }
   });
